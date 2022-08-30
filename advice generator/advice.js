@@ -11,7 +11,7 @@ const btn = document.querySelector('.btn');
 const ADVICE_API = "https://api.adviceslip.com/advice";
 
 function generateRandomNum() {
-let randomValue = Math.floor(Math.random() * 1000)
+let randomValue = Math.floor(Math.random() * 100)
 getNewAdvice(randomValue)
 }
 fetch(ADVICE_API).then(res => {
@@ -21,10 +21,8 @@ fetch(ADVICE_API).then(res => {
 })
 
 async function getNewAdvice (value) {
-    console.log(value,'value')
     const res = await fetch(`https://api.adviceslip.com/advice/${value}`);
     const data = await res.json();
-    console.log(data,'data')
    try{
     generateAdvice(data.slip)
    }
@@ -35,12 +33,11 @@ async function getNewAdvice (value) {
 
 async function generateAdvice (arg) {
     const response = await arg
-    setTimeout(() => {
-        console.log(arg)
+
     adviceNumber.innerText = `Advice #${response?.id}`
     adviceText.innerText = response?.advice;
    
-    },2500)
+   
 }
 
 btn.addEventListener('click', generateRandomNum)
