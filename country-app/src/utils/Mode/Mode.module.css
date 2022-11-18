@@ -1,0 +1,21 @@
+
+.moonIcon {
+    font-size: 14px;
+    margin-right: .9rem;
+    font-family: var(--main-font);
+    display: inline-block;
+    vertical-align: text-bottom;
+
+
+}
+
+.modeText {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: var(--main-font);
+    font-weight: 900;
+
+}
+

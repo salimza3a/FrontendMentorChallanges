@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    /* font-weight: 300 ;  doesnt't work*/ 
+    color: #f2f2f2;
+    background-color: hsl(209, 23%, 22%)
+}
