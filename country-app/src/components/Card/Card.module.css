@@ -1,0 +1,45 @@
+.cardContainer {
+    width: 28rem;
+    height: 38rem;
+    background-color: hsl(209, 23%, 22%) ;
+    display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+    border-radius: 4px;
+
+}
+
+.imgContainer {
+    width: 28rem;
+    height: 19rem;
+
+}
+
+.imgContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.textContainer {
+    margin: 2rem auto auto 2rem;
+}
+
+.textContainer h3 {
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    font-weight: var(--font-bolder);
+    margin-bottom: .8rem;
+}
+
+.textContainer > p{
+    font-size: 1.4rem;
+    font-family: var(--main-font);
+    font-weight: var(--font-medium);
+}
+
+.population, .region, .capital {
+    font-weight: var(--font-light);
+
+}

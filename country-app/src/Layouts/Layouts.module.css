@@ -1,5 +1,11 @@
-.container {
+.container{
     width: 95%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.searchAndFilterPart{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.9rem 0;
 }
